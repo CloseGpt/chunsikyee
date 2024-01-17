@@ -1,13 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_top_cv"
+        android:layout_width="411dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원가입"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/signup_name"
+        android:layout_gravity="center"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="150dp"
+        android:text="   이름"
+        android:textSize="16dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/border_white"/>
+
+    <EditText
+        android:id="@+id/signup_party"
+        android:layout_gravity="center"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="18dp"
+        android:text="   소속"
+        android:textSize="16dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/border_white"/>
+
+    <EditText
+        android:id="@+id/signup_sNum"
+        android:layout_gravity="center"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="18dp"
+        android:text="   식별번호 ex)학번, 사번등"
+        android:textSize="16dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/border_white"/>
+
+    <EditText
+        android:id="@+id/signup_id"
+        android:layout_gravity="center"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="18dp"
+        android:text="   아이디"
+        android:textSize="16dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/border_white"/>
+
+    <EditText
+        android:id="@+id/signup_pw"
+        android:layout_gravity="center"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="18dp"
+        android:text="   비밀번호"
+        android:textSize="16dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/border_white"/>
+
+    <EditText
+        android:id="@+id/signup_pwr"
+        android:layout_gravity="center"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="18dp"
+        android:text="   비밀번호 확인"
+        android:textSize="16dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/border_white"/>
+
+    <Button
+        android:id="@+id/signup_Button"
+        android:layout_width="326dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="회원가입"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/border_black"/>
 
 </LinearLayout>
