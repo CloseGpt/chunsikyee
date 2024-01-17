@@ -29,16 +29,15 @@ public class SqlHelper extends SQLiteOpenHelper {
 //                "))";
 
         String create_sql = "create table if not exists Users(" +
-                "user_num INTEGER," +
+                "user_num INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "user_id text not null unique," +
                 "user_pw text not null," +
                 "user_name text not null," +
                 "user_uid text not null unique," +
-                "isAdmin INTEGER not null check(isAdminn == 0 or isAdmin == 1)," +
-                "user_organization text not null," +
-                "primary key(user_num))";
+                "isAdmin INTEGER not null check(isAdmin == 0 or isAdmin == 1)," +
+                "user_organization text not null)";
 
-        String insert_sql = "insert into Users values(1, 'id','pw','name','uid',0,'oraginization')";
+        String insert_sql = "insert into Users values('id','pw','name','uid',0,'oraginization')";
         sqLiteDatabase.execSQL(create_sql);
 
 
