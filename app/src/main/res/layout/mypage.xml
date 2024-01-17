@@ -33,11 +33,11 @@
         android:text="이름"
         android:textColor="@color/black"
         android:textSize="20dp"/>
-    
+
     <EditText
         android:id="@+id/mypgae_inName"
         android:layout_width="326dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginTop="6dp"
         android:layout_gravity="center"
         android:background="@drawable/border_white"
@@ -58,7 +58,7 @@
     <EditText
         android:id="@+id/mypgae_inParty"
         android:layout_width="326dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginTop="6dp"
         android:layout_gravity="center"
         android:background="@drawable/border_white"
@@ -79,7 +79,7 @@
     <EditText
         android:id="@+id/mypgae_inNumber"
         android:layout_width="326dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginTop="6dp"
         android:layout_gravity="center"
         android:background="@drawable/border_white"
