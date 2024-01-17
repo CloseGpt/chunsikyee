@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/toolbar"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/wht"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홈"
+            android:fontFamily="@font/kimjungchulgothicbold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blk"
+            android:textSize="24sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_arrow_un"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/swf"
+                android:fontFamily="@font/kimjungchulgothicbold"
+                android:textColor="@color/blk"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="오늘식단"
+            android:fontFamily="@font/kimjungchulgothicbold"
+            android:textColor="@color/blk"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="중식"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textColor="@color/blk"
+            android:textSize="20sp"
+        />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:background="#d9d9d9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="흑미밥\n김치짬뽕찌개\n공장제 돈까스\n소세지 야채 볶음\n백김치"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:textColor="@color/blk"
+                android:textSize="20sp"/>
+
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="석식"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textColor="@color/blk"
+            android:textSize="20sp"
+            />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:background="#d9d9d9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="흑미밥\n김치짬뽕찌개\n공장제 돈까스\n소세지 야채 볶음\n백김치"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:textColor="@color/blk"
+                android:textSize="20sp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

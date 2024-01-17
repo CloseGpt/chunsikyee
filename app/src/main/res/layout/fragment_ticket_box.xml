@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/toolbar"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/wht"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식권구매"
+            android:fontFamily="@font/kimjungchulgothicbold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blk"
+            android:textSize="24sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</FrameLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">chunsik_project</string>
+    <string name="swf">성원푸드</string>
+    <string name="semicon">세미콘식당</string>
+    <string name="miga">미가식당</string>
+    <string name="gaga">TIP학생식당</string>
 </resources>

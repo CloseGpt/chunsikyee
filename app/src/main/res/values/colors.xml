@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#C5C5C5</color>
     <color name="red">#C80000</color>
+    <color name="blk">#000000</color>
+    <color name="wht">#FFFFFF</color>
+    <color name="inBlk">#4D000000</color>
+    <color name="inWht">#CCFFFFFF</color>
+
 </resources>
