@@ -1,10 +1,10 @@
 package com.example.chunsik_project;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
-import androidx.annotation.Nullable;
+import java.util.ArrayList;
 
 public class SqlHelper extends SQLiteOpenHelper {
 
@@ -37,12 +37,28 @@ public class SqlHelper extends SQLiteOpenHelper {
                 "isAdmin INTEGER not null check(isAdminn == 0 or isAdmin == 1)," +
                 "user_organization text not null," +
                 "primary key(user_num))";
+
+        String insert_sql = "insert into Users values(1, 'id','pw','name','uid',0,'oraginization')";
         sqLiteDatabase.execSQL(create_sql);
+
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+    }
+
+    public ArrayList<String> getUserData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select user_name from Users", null);
+
+        ArrayList<String> data = new ArrayList<>();
+
+        while (cursor.moveToNext()){
+            data.add(cursor.getString(0));
+        }
+        cursor.close();
+        return data;
     }
 }
