@@ -15,7 +15,7 @@ import com.example.chunsik_project.ui.theme.Chunsik_projectTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        println("111")
+        println("211")
     }
 }
 
