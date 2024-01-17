@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="411dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@color/black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="로그인"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/login_ID"
+            android:layout_width="329dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/border_white"
+            android:text="   아이디"
+            android:textColor="@color/gray"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/login_PassWord"
+            android:layout_width="329dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_white"
+            android:text="   비밀번호"
+            android:textColor="@color/gray"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/login_Button"
+            android:layout_width="329dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:text="로그인"
+            android:background="@drawable/border_black"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="50dp"
+            android:text="처음이신가요? 회원가입"/>
+
+
+
+
+</LinearLayout>
