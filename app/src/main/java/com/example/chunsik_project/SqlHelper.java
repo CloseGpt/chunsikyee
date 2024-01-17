@@ -17,17 +17,26 @@ public class SqlHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String create_sql = "CREATE TABLE \"Users\" (\n" +
-                "\t\"user_num\"\tINTEGER,\n" +
-                "\t\"user_id\"\tTEXT NOT NULL UNIQUE,\n" +
-                "\t\"user_pw\"\tTEXT NOT NULL,\n" +
-                "\t\"user_name\"\tTEXT NOT NULL,\n" +
-                "\t\"user_uid\"\tTEXT NOT NULL UNIQUE,\n" +
-                "\t\"isAdmin\"\tINTEGER NOT NULL CHECK(isAdmin == 0 or isAdmin == 1),\n" +
-                "\t\"user_organization\"\tTEXT NOT NULL,\n" +
-                "\tPRIMARY KEY(\"user_num\" AUTOINCREMENT)\n" +
-                "))";
+//        String create_sql = "CREATE TABLE \"Users\" (\n" +
+//                "\t\"user_num\"\tINTEGER,\n" +
+//                "\t\"user_id\"\tTEXT NOT NULL UNIQUE,\n" +
+//                "\t\"user_pw\"\tTEXT NOT NULL,\n" +
+//                "\t\"user_name\"\tTEXT NOT NULL,\n" +
+//                "\t\"user_uid\"\tTEXT NOT NULL UNIQUE,\n" +
+//                "\t\"isAdmin\"\tINTEGER NOT NULL CHECK(isAdmin == 0 or isAdmin == 1),\n" +
+//                "\t\"user_organization\"\tTEXT NOT NULL,\n" +
+//                "\tPRIMARY KEY(\"user_num\" AUTOINCREMENT)\n" +
+//                "))";
 
+        String create_sql = "create table if not exists Users(" +
+                "user_num INTEGER," +
+                "user_id text not null unique," +
+                "user_pw text not null," +
+                "user_name text not null," +
+                "user_uid text not null unique," +
+                "isAdmin INTEGER not null check(isAdminn == 0 or isAdmin == 1)," +
+                "user_organization text not null," +
+                "primary key(user_num))";
         sqLiteDatabase.execSQL(create_sql);
 
     }
