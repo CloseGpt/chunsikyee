@@ -3,10 +3,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto">
-
-
-
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/myInfo_myInfo"
         android:layout_width="match_parent"
@@ -28,22 +26,23 @@
         android:id="@+id/myInfo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="44dp"
+
         android:layout_marginTop="120dp"
-        android:fontFamily="@font/kimjungchulgothicbold"
+        android:fontFamily="@font/kimjungchulgothicregular"
         android:text="이름"
         android:textColor="@color/black"
         android:textSize="20dp"/>
 
     <EditText
         android:id="@+id/myInfo_inName"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="6dp"
         android:layout_gravity="center"
         android:background="@drawable/border_white"
-        android:fontFamily="@font/kimjungchulgothicbold"
-        android:text="   이름"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:paddingLeft="15dp"
+        android:hint="이름"
         android:textSize="16dp"
         android:textColor="@color/gray" />
 
@@ -51,22 +50,22 @@
         android:id="@+id/myInfo_party"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="44dp"
         android:layout_marginTop="18dp"
-        android:fontFamily="@font/kimjungchulgothicbold"
+        android:fontFamily="@font/kimjungchulgothicregular"
         android:text="소속"
         android:textColor="@color/black"
         android:textSize="20dp"/>
 
     <EditText
         android:id="@+id/myInfo_inParty"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="6dp"
         android:layout_gravity="center"
         android:background="@drawable/border_white"
-        android:fontFamily="@font/kimjungchulgothicbold"
-        android:text="   소속"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:paddingLeft="15dp"
+        android:hint="소속"
         android:textSize="16dp"
         android:textColor="@color/gray" />
 
@@ -74,22 +73,23 @@
         android:id="@+id/myInfo_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="44dp"
+
         android:layout_marginTop="18dp"
-        android:fontFamily="@font/kimjungchulgothicbold"
+        android:fontFamily="@font/kimjungchulgothicregular"
         android:text="식별번호  "
         android:textColor="@color/black"
         android:textSize="20dp"/>
 
     <EditText
         android:id="@+id/myInfo_inNumber"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="6dp"
         android:layout_gravity="center"
         android:background="@drawable/border_white"
-        android:fontFamily="@font/kimjungchulgothicbold"
-        android:text="   식별번 ex)학번, 사번등"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:paddingLeft="15dp"
+        android:hint="식별번호 ex)학번, 사번등"
         android:textSize="16dp"
         android:textColor="@color/gray" />
 
@@ -104,21 +104,20 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:background="@drawable/border_black"/>
-    
-    
-    <TextView
-        android:id="@+id/myInfo_logOut"
+
+
+    <Button
+        android:id="@+id/logOutBtn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="85dp"
-        android:layout_marginLeft="300dp"
-        android:text="로그아웃"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="110dp"
         android:fontFamily="@font/kimjungchulgothicbold"
-        android:textSize="18dp"
+        android:text="로그아웃"
         android:textColor="@color/red"
-        />
-
-
+        android:textSize="18dp"
+        android:background="@color/invi"/>
 
 
 </LinearLayout>
