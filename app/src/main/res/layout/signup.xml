@@ -31,7 +31,7 @@
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginTop="150dp"
-        android:text="   이름"
+        android:hint="   이름"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -42,7 +42,7 @@
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginTop="18dp"
-        android:text="   소속"
+        android:hint="   소속"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -53,7 +53,7 @@
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginTop="18dp"
-        android:text="   식별번호 ex)학번, 사번등"
+        android:hint="   식별번호 ex)학번, 사번등"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -64,7 +64,7 @@
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginTop="18dp"
-        android:text="   아이디"
+        android:hint="   아이디"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -75,7 +75,7 @@
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginTop="18dp"
-        android:text="   비밀번호"
+        android:hint="   비밀번호"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -86,7 +86,7 @@
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginTop="18dp"
-        android:text="   비밀번호 확인"
+        android:hint="   비밀번호 확인"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -97,7 +97,7 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="18dp"
-        android:text="회원가입"
+        android:hint="회원가입"
         android:textSize="20dp"
         android:textColor="@color/white"
         android:background="@drawable/border_black"/>
