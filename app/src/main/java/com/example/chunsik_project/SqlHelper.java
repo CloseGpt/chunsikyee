@@ -17,6 +17,8 @@ public class SqlHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS Users");
+
 
         String create_sql = "create table if not exists Users(" +
                 "user_num INTEGER PRIMARY KEY AUTOINCREMENT," +
