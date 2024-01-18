@@ -7,11 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
-import androidx.activity.ComponentActivity;
-import androidx.annotation.Nullable;
-
-public class LoginActivity extends ComponentActivity {
+public class LoginActivity extends AppCompatActivity {
 
     EditText login_id;
     EditText login_pw;
@@ -23,14 +22,14 @@ public class LoginActivity extends ComponentActivity {
     Cursor cursor;
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_activity);
+        setContentView(R.layout.activity_login);
 
         login_id = findViewById(R.id.login_ID);
         login_pw = findViewById(R.id.login_PassWord);
         login_btn = findViewById(R.id.login_Button);
-        signup_text = findViewById(R.id.signup_Text);
+        signup_text = findViewById(R.id.signup_Btn);
 
         sqlHelper = new SqlHelper(getApplicationContext());
 
@@ -64,6 +63,6 @@ public class LoginActivity extends ComponentActivity {
                 startActivity(signupIntent);
             }
         });
-
     }
 }
+
