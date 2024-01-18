@@ -75,7 +75,7 @@
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="96dp"
-                android:background="#000000"/>
+                android:background="@color/blk"/>
             <View
                 android:layout_width="35dp"
                 android:layout_height="22dp"
@@ -103,7 +103,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="13dp"
+                android:layout_marginBottom="16dp"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="71dp"
                 android:text="사용내역"
@@ -112,12 +112,13 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ableTicketBtn"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="30dp"
-                android:layout_gravity="end"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="사용가능 식권 :       장  "
+                android:background="@color/invi"
                 android:textColor="@color/inWht"
                 android:textSize="12sp"
                 android:fontFamily="@font/kimjungchulgothicregular"
@@ -125,18 +126,20 @@
             />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/usedTicketBtn"
-                android:layout_marginBottom="16dp"
                 android:layout_marginEnd="30dp"
+                android:layout_marginBottom="3dp"
                 android:layout_gravity="bottom|end"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="사용한 식권 :       장  "
                 android:textColor="@color/inWht"
                 android:textSize="12sp"
+                android:background="@color/invi"
                 android:fontFamily="@font/kimjungchulgothicregular"
                 android:drawableEnd="@drawable/ic_arrow"
                 />
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
