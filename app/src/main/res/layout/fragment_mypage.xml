@@ -145,6 +145,7 @@
             android:layout_marginTop="40dp">
 
             <Button
+                android:id="@+id/userInfoBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/invi"
@@ -160,18 +161,39 @@
                 android:background="#000000">
             </View>
             <Button
+                android:id="@+id/notiSetting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginEnd="100dp"
                 android:background="@color/invi"
-                android:text="내 정보"
+                android:text="알림설정"
                 android:fontFamily="@font/kimjungchulgothicregular"
                 android:textSize="20sp"
                 android:textColor="@color/blk" />
             <View
                 android:layout_width="115dp"
                 android:layout_height="3dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="65dp"
                 android:layout_marginTop="40dp"
+                android:background="#000000">
+            </View>
+            <Button
+                android:id="@+id/csBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/invi"
+                android:text="고객센터"
+                android:layout_marginTop="65dp"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:textSize="20sp"
+                android:textColor="@color/blk" />
+            <View
+                android:layout_width="115dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="105dp"
                 android:background="#000000">
             </View>
 

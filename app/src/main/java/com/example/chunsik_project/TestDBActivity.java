@@ -1,4 +1,4 @@
-package com.example.chunsik_project;
+/*package com.example.chunsik_project;
 
 import android.os.Bundle;
 
@@ -18,4 +18,4 @@ public class HomeActivity extends ComponentActivity {
         ArrayList<String> data = sqlHelper.getUserData();
         System.out.println(data);
     }
-}
+}*/
