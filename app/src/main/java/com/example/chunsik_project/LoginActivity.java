@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (cursor.getString(1).equals(input_id) && cursor.getString(2).equals(input_pw)) {
 
-                        Intent naviIntent = new Intent(getApplicationContext(), NaviActivity.class);
+                        Intent naviIntent = new Intent(getApplicationContext(), NaviActivity.class);//김택준:NaviActivity->HomeFragment
                         naviIntent.putExtra("user_id", input_id);
                         naviIntent.putExtra("user_pw", input_pw);
 

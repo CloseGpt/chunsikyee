@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chunsik_project"
         tools:targetApi="31">
-        <activity
-            android:name=".NaviActivity"
-            android:exported="false" />
 
         <activity
             android:name=".SplashActivity"

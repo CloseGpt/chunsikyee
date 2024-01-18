@@ -61,7 +61,7 @@
             android:background="@drawable/border_white2s"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:text="식권 10장           6000원"
+            android:text="식권 10장          6,000원"
             android:textSize="30sp"
             android:fontFamily="@font/kimjungchulgothicregular"
             android:textAlignment="textStart"
@@ -74,7 +74,7 @@
             android:background="@drawable/border_white2s"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:text="식권 10장           6000원"
+            android:text="식권 10장        57,000원"
             android:textSize="30sp"
             android:fontFamily="@font/kimjungchulgothicregular"
             android:textAlignment="textStart"
@@ -87,7 +87,7 @@
             android:background="@drawable/border_white2s"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:text="식권 10장           6000원"
+            android:text="식권 10장      108,000원"
             android:textSize="30sp"
             android:fontFamily="@font/kimjungchulgothicregular"
             android:textAlignment="textStart"
@@ -104,4 +104,38 @@
         android:background="@color/blk"
         android:fontFamily="@font/kimjungchulgothicbold"
         android:textColor="@color/wht"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="120dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_home"
+            android:background="@color/invi"
+            android:contentDescription="홈 버튼"/>
+        <ImageButton
+            android:id="@+id/mypageBtn"
+            android:layout_width="120dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_mypage"
+            android:background="@color/invi"
+            android:contentDescription="마이페이지 버튼"/>
+
+        <ImageButton
+            android:id="@+id/ticketBtn"
+            android:layout_width="120dp"
+            android:layout_height="72dp"
+            android:gravity="end"
+            android:background="@color/invi"
+            android:src="@drawable/ic_ticket"
+            android:contentDescription="식권 구매 버튼"/>
+    </LinearLayout>
 </FrameLayout>
