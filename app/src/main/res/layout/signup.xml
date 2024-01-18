@@ -55,6 +55,7 @@
         android:fontFamily="@font/kimjungchulgothicregular"
         android:hint="이름"
         android:textSize="16dp"
+        android:inputType="textPersonName"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
 
@@ -67,6 +68,7 @@
         android:paddingLeft="15dp"
         android:fontFamily="@font/kimjungchulgothicregular"
         android:hint="소속"
+        android:inputType="text"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -78,6 +80,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:paddingLeft="15dp"
+        android:inputType="number"
         android:fontFamily="@font/kimjungchulgothicregular"
         android:hint="식별번호 ex)학번, 사번등"
         android:textSize="16dp"
@@ -106,6 +109,7 @@
         android:paddingLeft="15dp"
         android:hint="비밀번호"
         android:textSize="16dp"
+        android:inputType="textPassword"
         android:fontFamily="@font/kimjungchulgothicregular"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -120,6 +124,7 @@
         android:hint="비밀번호 확인"
         android:fontFamily="@font/kimjungchulgothicregular"
         android:textSize="16dp"
+        android:inputType="textPassword"
         android:textColor="@color/gray"
         android:background="@drawable/border_white" />
 
