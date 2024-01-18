@@ -44,26 +44,17 @@ public class LoginActivity extends AppCompatActivity {
 
                 while (cursor.moveToNext()) {
 
-                    if (!cursor.getString(1).equals(input_id) && !cursor.getString(2).equals(input_pw)){
-                        //Toast.makeText(getApplicationContext(), "로그인 실패", Toast.LENGTH_SHORT).show();
-                        String temp = cursor.getString(1) + "\n" + cursor.getString(2) + "\n" + cursor.getString(2);
-
-                        Toast.makeText(getApplicationContext(), temp, Toast.LENGTH_SHORT).show();
-                        Toast.makeText(getApplicationContext(), input_id + input_pw, Toast.LENGTH_SHORT).show();
-                    }
-
                     if (cursor.getString(1).equals(input_id) && cursor.getString(2).equals(input_pw)) {
 
-                        Intent homeIntent = new Intent(getApplicationContext(), HomeFragment.class);
-                        homeIntent.putExtra("user_id", input_id);
-                        homeIntent.putExtra("user_pw", input_pw);
+                        Intent naviIntent = new Intent(getApplicationContext(), NaviActivity.class);
+                        naviIntent.putExtra("user_id", input_id);
+                        naviIntent.putExtra("user_pw", input_pw);
 
                         Toast.makeText(getApplicationContext(), "로그인 성공", Toast.LENGTH_SHORT).show();
 
-                        startActivity(homeIntent);
+                        startActivity(naviIntent);
                         sqlDB.close();
                         break;
-
                     }
 
                 }
