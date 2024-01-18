@@ -5,4 +5,5 @@
     <string name="miga">미가식당</string>
     <string name="gaga">TIP학생식당</string>
     <string name="idfication">한국공학대학교 | 2023591000</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
