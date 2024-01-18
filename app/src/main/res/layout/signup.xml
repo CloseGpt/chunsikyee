@@ -24,14 +24,36 @@
 
     </androidx.cardview.widget.CardView>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logint"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:fontFamily="@font/kimjungchulgothicbold"
+        android:textSize="25sp"
+        android:textColor="@color/blk"
+        android:gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/signup_name"
         android:layout_gravity="center"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="150dp"
-        android:hint="   이름"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:hint="이름"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -39,10 +61,12 @@
     <EditText
         android:id="@+id/signup_party"
         android:layout_gravity="center"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="18dp"
-        android:hint="   소속"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:hint="소속"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -50,10 +74,12 @@
     <EditText
         android:id="@+id/signup_sNum"
         android:layout_gravity="center"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="18dp"
-        android:hint="   식별번호 ex)학번, 사번등"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:hint="식별번호 ex)학번, 사번등"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -61,10 +87,12 @@
     <EditText
         android:id="@+id/signup_id"
         android:layout_gravity="center"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="18dp"
-        android:hint="   아이디"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:hint="아이디"
         android:textSize="16dp"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
@@ -72,34 +100,41 @@
     <EditText
         android:id="@+id/signup_pw"
         android:layout_gravity="center"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="18dp"
-        android:hint="   비밀번호"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:hint="비밀번호"
         android:textSize="16dp"
+        android:fontFamily="@font/kimjungchulgothicregular"
         android:textColor="@color/gray"
         android:background="@drawable/border_white"/>
 
     <EditText
         android:id="@+id/signup_pwr"
         android:layout_gravity="center"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="18dp"
-        android:hint="   비밀번호 확인"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:hint="비밀번호 확인"
+        android:fontFamily="@font/kimjungchulgothicregular"
         android:textSize="16dp"
         android:textColor="@color/gray"
-        android:background="@drawable/border_white"/>
+        android:background="@drawable/border_white" />
 
     <Button
         android:id="@+id/signup_Button"
-        android:layout_width="326dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="18dp"
-        android:hint="회원가입"
+        android:layout_marginTop="20dp"
+        android:text="회원가입"
         android:textSize="20dp"
         android:textColor="@color/white"
-        android:background="@drawable/border_black"/>
+        android:background="@drawable/border_black"
+        android:fontFamily="@font/kimjungchulgothicbold"
+        />
+    </LinearLayout>
 
 </LinearLayout>
