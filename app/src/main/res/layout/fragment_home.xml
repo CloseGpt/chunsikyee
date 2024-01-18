@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
-    <ImageView
-        android:layout_width="match_parent"
+    <View
+        android:layout_width="wrap_content"
         android:layout_height="54dp"
-        android:background="@drawable/toolbar"/>
+        android:background="@color/blk"/>
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/settingToolbar"
         android:layout_width="match_parent"

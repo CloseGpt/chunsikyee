@@ -13,5 +13,5 @@
     <color name="wht">#FFFFFF</color>
     <color name="inBlk">#4D000000</color>
     <color name="inWht">#CCFFFFFF</color>
-
+    <color name="invi">#00000000</color>
 </resources>

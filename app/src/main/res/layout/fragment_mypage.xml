@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
-    <ImageView
-        android:layout_width="match_parent"
+    <View
+        android:layout_width="wrap_content"
         android:layout_height="54dp"
-        android:background="@drawable/toolbar"/>
+        android:background="@color/blk"/>
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/settingToolbar"
         android:layout_width="match_parent"
@@ -25,26 +25,157 @@
             android:textSize="24sp"/>
 
     </androidx.appcompat.widget.Toolbar>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginTop="84dp"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="홍길동"
                 android:fontFamily="@font/kimjungchulgothicbold"
+                android:text="홍길동"
                 android:textColor="@color/blk"
-                android:textSize="25sp"/>
-            <
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:text="님,안녕하세요!"
+                android:textColor="@color/blk"
+                android:textSize="20sp" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:text="@string/idfication"
+            android:textColor="@color/blk"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:background="#000000"/>
+            <View
+                android:layout_width="35dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/ic_ticket_w"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="71dp"
+                android:text="식권함"
+                android:textColor="@color/wht"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="22.5dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="13dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="36.5dp"
+                android:background="@drawable/ic_list"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="71dp"
+                android:text="사용내역"
+                android:textColor="@color/wht"
+                android:textSize="16sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ableTicketBtn"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용가능 식권 :       장  "
+                android:textColor="@color/inWht"
+                android:textSize="12sp"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:drawableEnd="@drawable/ic_arrow"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/usedTicketBtn"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="30dp"
+                android:layout_gravity="bottom|end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용한 식권 :       장  "
+                android:textColor="@color/inWht"
+                android:textSize="12sp"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:drawableEnd="@drawable/ic_arrow"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/invi"
+                android:text="내 정보"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:textSize="20sp"
+                android:textColor="@color/blk" />
+            <View
+                android:layout_width="115dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="40dp"
+                android:background="#000000">
+            </View>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@color/invi"
+                android:text="내 정보"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:textSize="20sp"
+                android:textColor="@color/blk" />
+            <View
+                android:layout_width="115dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="40dp"
+                android:background="#000000">
+            </View>
+
+        </FrameLayout>
 
     </LinearLayout>
 
