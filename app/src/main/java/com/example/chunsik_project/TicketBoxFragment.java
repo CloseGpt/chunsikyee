@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -28,32 +29,32 @@ public class TicketBoxFragment extends Fragment {
         ticketOp1Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // ticketOp1Btn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                String message = "식권 1장 선택완료";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
 
         ticketOp2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // ticketOp2Btn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                String message = "식권 10장 선택완료";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
 
         ticketOp3Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // ticketOp3Btn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                String message = "식권 20장 선택완료";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
 
         buyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // buyBtn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                String message = "구매되었습니다.";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -16,7 +16,6 @@ public class LoginActivity extends AppCompatActivity {
     EditText login_pw;
     Button login_btn;
     Button signup_text;
-
     SqlHelper sqlHelper;
     SQLiteDatabase sqlDB;
     Cursor cursor;

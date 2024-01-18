@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -32,40 +33,45 @@ public class MypageFragment extends Fragment {
         ableTicketBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // ableTicketBtn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                // remainingTickets 변수가 실제로 남은 티켓 수를 보유하는 정수 변수라고 가정합니다.
+                //int remainingTickets = getRemainingTickets(); // 실제 로직으로 대체하세요.
+                String message = "남은 식권은 " + "remainingTickets" + "개 입니다.";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
+
+
 
         usedTicketBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // usedTicketBtn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                //int remainingTickets = getRemainingTickets(); // 실제 로직으로 대체하세요.
+                String message = "사용된 식권은 " + "usedTickets" + "개 입니다.";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
 
         userInfoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // userInfoBtn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                String message = "내 정보 실행";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
 
         notiSettingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // notiSettingBtn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                String message = "알림 설정";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
 
         csBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // csBtn 클릭 이벤트 처리
-                // 원하는 동작을 여기에 추가하세요.
+                String message = "고객센터 실행";
+                Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
 
