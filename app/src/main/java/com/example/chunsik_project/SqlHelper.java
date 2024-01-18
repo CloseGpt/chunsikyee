@@ -17,16 +17,6 @@ public class SqlHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-//        String create_sql = "CREATE TABLE \"Users\" (\n" +
-//                "\t\"user_num\"\tINTEGER,\n" +
-//                "\t\"user_id\"\tTEXT NOT NULL UNIQUE,\n" +
-//                "\t\"user_pw\"\tTEXT NOT NULL,\n" +
-//                "\t\"user_name\"\tTEXT NOT NULL,\n" +
-//                "\t\"user_uid\"\tTEXT NOT NULL UNIQUE,\n" +
-//                "\t\"isAdmin\"\tINTEGER NOT NULL CHECK(isAdmin == 0 or isAdmin == 1),\n" +
-//                "\t\"user_organization\"\tTEXT NOT NULL,\n" +
-//                "\tPRIMARY KEY(\"user_num\" AUTOINCREMENT)\n" +
-//                "))";
 
         String create_sql = "create table if not exists Users(" +
                 "user_num INTEGER PRIMARY KEY AUTOINCREMENT," +
@@ -39,6 +29,7 @@ public class SqlHelper extends SQLiteOpenHelper {
 
         String insert_sql = "insert into Users values('id','pw','name','uid',0,'oraginization')";
         sqLiteDatabase.execSQL(create_sql);
+
 
 
     }
