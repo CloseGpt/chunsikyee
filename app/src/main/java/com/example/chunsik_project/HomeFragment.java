@@ -23,6 +23,8 @@ public class HomeFragment extends Fragment {
 
     final static int PORT = 10002;
     ServerSocket serverSocket;
+    String user_id;
+    String user_pw;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -33,7 +35,11 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+         user_id = this.getArguments().getString("user_id");
+         user_pw = this.getArguments().getString("user_pw");
+
+        return view;
     }
 
     @Override
@@ -48,8 +54,15 @@ public class HomeFragment extends Fragment {
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle result = new Bundle();
+                result.putString("user_id", user_id);
+                result.putString("user_pw", user_pw);
+
+                HomeFragment homeFragment = new HomeFragment();
+                homeFragment.setArguments(result);
+
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, new HomeFragment());
+                transaction.replace(R.id.fragment_container, homeFragment);
                 transaction.addToBackStack(null); // 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
                 transaction.commit();
             }
@@ -58,8 +71,16 @@ public class HomeFragment extends Fragment {
         mypageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle result = new Bundle();
+                result.putString("user_id", user_id);
+                result.putString("user_pw", user_pw);
+
+                MypageFragment mypageFragment = new MypageFragment();
+                mypageFragment.setArguments(result);
+
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, new MypageFragment());
+
+                transaction.replace(R.id.fragment_container, mypageFragment);
                 transaction.addToBackStack(null); // 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
                 transaction.commit();
             }
@@ -68,8 +89,15 @@ public class HomeFragment extends Fragment {
         ticketBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle result = new Bundle();
+                result.putString("user_id", user_id);
+                result.putString("user_pw", user_pw);
+
+                TicketBoxFragment ticketBoxFragment = new TicketBoxFragment();
+                ticketBoxFragment.setArguments(result);
+
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, new TicketBoxFragment());
+                transaction.replace(R.id.fragment_container,  ticketBoxFragment);
                 transaction.addToBackStack(null); // 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
                 transaction.commit();
             }

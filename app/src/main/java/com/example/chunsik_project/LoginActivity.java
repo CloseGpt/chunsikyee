@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -45,13 +46,15 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (cursor.getString(1).equals(input_id) && cursor.getString(2).equals(input_pw)) {
 
-                        Intent naviIntent = new Intent(getApplicationContext(), MainActivity.class);
-                        naviIntent.putExtra("user_id", input_id);
-                        naviIntent.putExtra("user_pw", input_pw);
+
+
+                        Intent mainIntent = new Intent(getApplicationContext(), MainActivity.class);
+                        mainIntent.putExtra("user_id", input_id);
+                        mainIntent.putExtra("user_pw", input_pw);
 
                         Toast.makeText(getApplicationContext(), "로그인 성공", Toast.LENGTH_SHORT).show();
 
-                        startActivity(naviIntent);
+                        startActivity(mainIntent);
                         sqlDB.close();
                         break;
                     }

@@ -27,9 +27,11 @@ public class SqlHelper extends SQLiteOpenHelper {
                 "user_name text not null," +
                 "user_uid text not null unique," +
                 "isAdmin INTEGER not null check(isAdmin == 0 or isAdmin == 1)," +
-                "user_organization text not null)";
+                "user_organization text not null," +
+                "remain_ticket INTEGER not null default 10," +
+                "used_ticket INTEGER not null default 0)";
 
-        String insert_sql = "insert into Users values('id','pw','name','uid',0,'oraginization')";
+        String insert_sql = "insert into Users values('id','pw','name','uid',0,'oraginization', 10, 2)";
         sqLiteDatabase.execSQL(create_sql);
 
 
