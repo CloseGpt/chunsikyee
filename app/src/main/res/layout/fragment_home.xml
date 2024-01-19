@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center_vertical"
-                android:text="흑미밥\n김치짬뽕찌개\n공장제 돈까스\n소세지 야채 볶음\n백김치"
+                android:text="흑미밥\n차돌된장찌개\n공장제 돈까스\n계란말이\n피클"
                 android:fontFamily="@font/kimjungchulgothicregular"
                 android:textColor="@color/blk"
                 android:textSize="20sp"/>
@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center_vertical"
-                android:text="흑미밥\n김치짬뽕찌개\n공장제 돈까스\n소세지 야채 볶음\n백김치"
+                android:text="흑미밥\n참치김치찌개\n수제 돈까스\n소세지 야채 볶음\n백김치"
                 android:fontFamily="@font/kimjungchulgothicregular"
                 android:textColor="@color/blk"
                 android:textSize="20sp"/>
