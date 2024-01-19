@@ -16,13 +16,14 @@ import java.io.IOException;
 
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class HomeFragment extends Fragment {
 
-    final static int PORT = 10002;
-    ServerSocket serverSocket;
+    final static int PORT = 5002;
+    final static String HOST = "192.168.0.67";
     String user_id;
     String user_pw;
 
@@ -110,34 +111,24 @@ public class HomeFragment extends Fragment {
         protected Void doInBackground(Void... params) {
 
             while (true){
-                try {
-                    serverSocket = new ServerSocket(PORT);
+                try (Socket clientSocket = new Socket(HOST,PORT)){
 
-                    // 클라이언트와 연결될때까지 대기
-                    Socket clientSocket = serverSocket.accept();
-                    if (clientSocket == null){
-                        Log.v("클라이언트 소켓 수신실패", null);
-                    }
-                    // 소켓 수신
-                    InputStreamReader inputStreamReader = new InputStreamReader(clientSocket.getInputStream());
-                    BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-
-                    String data = bufferedReader.readLine();
-                    if (data == null){
-                        Log.v("데이터 소켓수신실패", null);
-                    }
-
-                        Log.v("소켓수신", data);
+                    Log.w("서버 연결여부 : ", "서버 연결됨");
 
 
-                    // 소켓 송신
+                    // String 값 소켓 수신
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+                    String result = reader.readLine();
+                    Log.w("결과 값 소켓 수신", result);
+
+                    // byte 값 소켓 송신
+                    byte hasTicket = 0;
                     OutputStream out = clientSocket.getOutputStream();
-                    byte outputMessage = 1;
-                    out.write(outputMessage);
+                    out.write(hasTicket);
                     out.flush();
+                    Log.w("데이터 소켓 송신","완료");
 
-                    clientSocket.close();
-                    serverSocket.close();
+
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
