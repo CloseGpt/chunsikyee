@@ -45,7 +45,9 @@
             android:paddingLeft="15dp"
             android:hint="아이디"
             android:textColor="@color/gray"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:maxLines="1"/>
 
         <EditText
             android:id="@+id/login_PassWord"
@@ -58,7 +60,9 @@
             android:hint="비밀번호"
             android:inputType="textPassword"
             android:textColor="@color/gray"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:maxLines="1"/>
 
         <Button
             android:id="@+id/login_Button"
