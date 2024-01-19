@@ -1,11 +1,14 @@
 package com.example.chunsik_project;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
@@ -18,6 +21,11 @@ public class MypageFragment extends Fragment {
     private Button userInfoBtn;
     private Button notiSettingBtn;
     private Button csBtn;
+    private SqlHelper sqlHelper;
+    private SQLiteDatabase sqlDB;
+    private String user_id;
+    private TextView user_name;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,14 +36,30 @@ public class MypageFragment extends Fragment {
         userInfoBtn = view.findViewById(R.id.userInfoBtn);
         notiSettingBtn = view.findViewById(R.id.notiSetting);
         csBtn = view.findViewById(R.id.csBtn);
+        user_name = view.findViewById(R.id.user_name);
 
+        sqlHelper = new SqlHelper(getContext());
+        sqlDB = sqlHelper.getReadableDatabase();
+        user_id = this.getArguments().getString("user_id");
+        String used_ticket = "";
+        String able_ticket = "";
+
+        String select_sql = String.format("select used_ticket, remain_ticket, user_name from Users where user_id = '%s'", user_id);
+        Cursor cursor = sqlDB.rawQuery(select_sql, null);
+        while (cursor.moveToNext()){
+
+            usedTicketBtn.setText("  " + cursor.getString(0) + " 장");
+            ableTicketBtn.setText("  " + cursor.getString(1) + " 장");
+            user_name.setText(cursor.getString(2));
+
+        }
         // 버튼에 대한 OnClickListener 설정
         ableTicketBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // remainingTickets 변수가 실제로 남은 티켓 수를 보유하는 정수 변수라고 가정합니다.
                 //int remainingTickets = getRemainingTickets(); // 실제 로직으로 대체하세요.
-                String message = "남은 식권은 " + "remainingTickets" + "개 입니다.";
+                String message = "남은 식권은 " + "       " + "개 입니다.";
                 Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
         });
